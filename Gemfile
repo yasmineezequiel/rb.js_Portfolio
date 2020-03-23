@@ -31,3 +31,4 @@ group :test do
 end
 
 gem 'friendly_id', '~> 5.2.4'
+gem 'devise', '~> 4.2'
