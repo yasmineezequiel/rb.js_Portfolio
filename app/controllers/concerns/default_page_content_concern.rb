@@ -6,7 +6,7 @@ module DefaultPageContentConcern
     end
 
     def set_pages_defaults
-        @page_title = "Y Portfolio | Scuba Coding"
+        @page_title = "Y Portfolio | Scuba Code"
         @seo_keywords = "Yasmine Ezequiel Portfolio"
     end
 end
