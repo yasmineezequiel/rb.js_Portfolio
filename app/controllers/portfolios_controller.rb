@@ -15,18 +15,16 @@ class PortfoliosController < ApplicationController
   end
 
   def create
-      @portfolio = Portfolio.new(portfolio_params)
-  
-      respond_to do |format|
-        if @portfolio.save
-          format.html { redirect_to portfolios_path, notice: 'Portfolio was successfully created.' }
-          format.json { render :show, status: :created, location: @portfolio }
-        else
-          format.html { render :new }
-          format.json { render json: @portfolio.errors, status: :unprocessable_entity }
-        end
+    @portfolio_item = Portfolio.new(portfolio_params)
+
+    respond_to do |format|
+      if @portfolio_item.save
+        format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live.' }
+      else
+        format.html { render :new }
       end
     end
+  end
 
   def edit
     @portfolio_item = Portfolio.find(params[:id])
@@ -34,16 +32,15 @@ class PortfoliosController < ApplicationController
 
   def update
     @portfolio_item = Portfolio.find(params[:id])
+
     respond_to do |format|
-        if @portfolio_item.update(portfolio_params)
-          format.html { redirect_to portfolios_path, notice: 'The record was successfully updated.' }
-          format.json { render :show, status: :ok, location: @portfolio }
-        else
-          format.html { render :edit }
-          format.json { render json: @portfolio.errors, status: :unprocessable_entity }
-        end
+      if @portfolio_item.update(portfolio_params)
+        format.html { redirect_to portfolios_path, notice: 'The record successfully updated.' }
+      else
+        format.html { render :edit }
       end
-    end 
+    end
+  end 
 
   def show 
     @portfolio_item = Portfolio.find(params[:id])
