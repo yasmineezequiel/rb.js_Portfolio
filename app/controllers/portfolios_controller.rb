@@ -1,6 +1,7 @@
 class PortfoliosController < ApplicationController
   before_action :set_portfolio_item, only: [:edit, :show, :update, :destroy]
   layout 'portfolio'
+  access all: [:show, :index, :react], user: {except: [:new, :create, :update, :edit,:destroy]}, site_admin: :all
 
   def index
       @portfolio_items = Portfolio.all
@@ -38,15 +39,18 @@ class PortfoliosController < ApplicationController
         format.html { render :edit }
       end
     end
-  end 
+  end
 
   def show 
   end  
   
   def destroy
+    # Destroy/delete the record
     @portfolio_item.destroy
+
+    # Redirect
     respond_to do |format|
-      format.html { redirect_to portfolios_url, notice: 'Record was deleted.' }
+      format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
     end
   end
 
