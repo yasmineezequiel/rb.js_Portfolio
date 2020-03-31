@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
     before_action :set_copyright
 
     def set_copyright
-        @copyright = ScubacodeViewTool::Renderer.copyright 'Yasmine Ezequiel', 'All rights reserved'
+        @copyright = ScubacodeViewTool::Renderer.copyright 'Scuba Code', 'All rights reserved'
     end
 end
 
