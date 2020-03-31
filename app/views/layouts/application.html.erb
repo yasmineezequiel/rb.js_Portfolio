@@ -25,12 +25,9 @@
           <%= source_helper("application") %> 
 
           <%= yield %>
+          <%= render "shared/application_footer" %>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p> <%= @copyright %> </p>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
