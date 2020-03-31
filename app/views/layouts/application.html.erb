@@ -11,21 +11,26 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
 
-    <%# from views/shared/_nav.html.erb %>
-    <%= render "shared/nav", location: 'top' %>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <%# from views/shared/_nav.html.erb %>
+          <%= render "shared/application_nav" %>
 
-    <%# from application_helper.rb %>
-    <%= login_helper %> 
+          <%# from application_helper.rb %>
+          <%= login_helper %> 
 
-    <%# from application_helper.rb %>
-    <%= source_helper("application") %> 
+          <%# from application_helper.rb %>
+          <%= source_helper("application") %> 
 
-    <%= yield %>
+          <%= yield %>
 
-    <%= @copyright %>
-      
+          <%= @copyright %>
+        </div>
+      </div>
+    </div>
+
   </body>
+
 </html>
