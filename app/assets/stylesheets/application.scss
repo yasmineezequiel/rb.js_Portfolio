@@ -164,9 +164,13 @@ body {
     color: black;
     text-align: left;
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .auth-links a {
   color: black;
-  padding-left: 50rem;
+}
+
+.register-text {
+  text-align: right;
 }
