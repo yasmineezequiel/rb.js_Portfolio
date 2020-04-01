@@ -21,4 +21,3 @@ require("channels")
 //= require bootstrap-sprockets
 
 import 'bootstrap'
-import './src/application.scss'
