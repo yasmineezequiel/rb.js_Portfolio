@@ -13,23 +13,17 @@
   </head>
 
   <body>
-
-  <%= render 'shared/blog_nav'%>
-
-  <%= render 'shared/blog_masthead'%>
-
-    <div class="container">
-      <div class="row">
-
-        <%= yield %>
-
-        <%= render 'shared/blog_sidebar'%>
-      </div>
-
+    <%= render 'shared/blog_nav'%>
+    <%= render 'shared/blog_masthead'%>
+      <div class="container">
+        <div class="row">
+          <%= yield %>
+          <%= render 'shared/blog_sidebar'%>
+        </div>
         <%= render 'shared/blog_footer'%>
-
         <%# from application_helper.rb %>
         <%= source_helper("blog") %> 
-    </div>
+      </div>
   </body>
+  
 </html>

@@ -3,34 +3,23 @@
   <head>
     <title><%=@page_title%></title>
     <%= csrf_meta_tags %>
-   <meta name="keywords" content= "<%= @seo_keywords %>" />
-    
+    <meta name="keywords" content= "<%= @seo_keywords %>" />
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
           <%# from views/shared/_nav.html.erb %>
           <%= render "shared/application_nav" %>
-
           <%# from application_helper.rb %>
-
           <%= yield %>
-
           <%= render "shared/application_footer" %>
-
           <%= source_helper("application") %> 
-
-
-
         </div>
       </div>
     </div>
-
   </body>
 
 </html>
