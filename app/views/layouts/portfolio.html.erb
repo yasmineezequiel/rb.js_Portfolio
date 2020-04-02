@@ -22,16 +22,9 @@
 
     <%= yield %>
 
-    <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-          <%= @copyright %>
-          <a href="#">Back to top</a>
-        </p>
-      </div>
-    </footer>
-
     <%= source_helper("application") %> 
+
+    <%= render 'shared/portfolio_footer'%>
 
   </body>
 </html>
