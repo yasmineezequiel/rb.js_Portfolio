@@ -27,7 +27,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 body {
   color: #fff;
@@ -184,4 +183,23 @@ body {
 .app-nav span {
   margin-left: .5rem;
   margin-right: .5rem;
+}
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  padding-top: 15.5rem;
+}
+
+.app-footer {
+  color: white;
 }
