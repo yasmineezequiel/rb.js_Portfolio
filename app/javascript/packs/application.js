@@ -7,11 +7,18 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("@rails/actioncable")
-
 import 'bootstrap'
 
 //= require jquery3
 //= require popper
-//= require bootstrap-sprockets
+
+//= require rails-ujs
+//= require jquery-ui
+//= require html.sortable
+//= require cocoon
+//= require gritter
+//= require activestorage
 //= require cable
+//= require turbolinks
+//= require_tree .
+//= require bootstrap-sprockets
