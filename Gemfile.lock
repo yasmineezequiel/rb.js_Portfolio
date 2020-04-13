@@ -206,6 +206,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    redis (3.3.5)
     regexp_parser (1.7.0)
     responders (3.0.0)
       actionpack (>= 5.0)
@@ -291,6 +292,7 @@ DEPENDENCIES
   pry-byebug
   puma (~> 4.1)
   rails (= 5.2.0)
+  redis (~> 3.3, >= 3.3.1)
   sass-rails (>= 6)
   selenium-webdriver
   spring
