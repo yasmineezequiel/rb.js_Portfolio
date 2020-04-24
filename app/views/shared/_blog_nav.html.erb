@@ -1,16 +1,15 @@
-<nav class="navbar navbar-expand-md navbar-light bg-faded blog-nav">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-    <div class="container">
-        <%= link_to "Yasmine Ezequiel", root_path, class: 'navbar-brand' %>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <%= nav_helper 'nav-link', 'li' %>  
-                <%= login_helper 'nav-link' %>  
-            </ul>
-        </div>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <div class="container">
+    <%= link_to "Yasmine Ezequiel", root_path, class: 'navbar-brand' %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+ 
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+     <ul class="navbar-nav ml-auto">
+       <%= nav_helper 'nav-link', 'span' %>
+       <%= login_helper 'nav-link' %>
+     </ul>
     </div>
+  </div>
 </nav>
