@@ -34,6 +34,9 @@ body {
   text-shadow: 0 .05rem .1rem rgba(248, 247, 247, 0.5);
   color: rgb(10, 3, 5);
 }
+h1{
+  font-family: 'Roboto', sans-serif;
+}
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -216,11 +219,12 @@ body {
 
 .about-card {
   font-size: 1.2rem;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
   padding: 20px;
   margin-top: 1%;
   -webkit-box-shadow: inset 25rem 25rem 25rem rgb(241, 204, 123);
-          box-shadow: inset -2rem -20rem 5rem rgb(241, 204, 123);
+          box-shadow: inset -25rem -30rem 5rem rgb(241, 204, 123);
   text-align: left;
 }
 
@@ -235,7 +239,7 @@ body {
   padding: 5px;
   min-height: 100px;
   width: 20vw;
-  background: rgb(4, 43, 70);
+  background: rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   margin-left: -5px;
   margin-bottom: 60px;
@@ -243,6 +247,7 @@ body {
 
 .contact-card {
   font-size: 1.4rem;
+  font-family: 'Lato', sans-serif;
   -webkit-box-shadow: inset 5rem 10rem 5rem rgb(241, 204, 123);
           box-shadow: inset 5rem 10rem 5rem rgb(241, 204, 123);
 }
@@ -250,9 +255,11 @@ body {
 .cover-heading {
   font-size: 3.6rem;
   margin-bottom: 60px;
+  font-family: 'Lato', sans-serif;
 }
 
 i {
+  font-family: 'Lato', sans-serif;
   font-size: 1.3rem;
 }
 .card-block {
@@ -270,6 +277,11 @@ i {
 }
 
 .skill {
+  font-family: 'Lato', sans-serif;
   text-align: left;
   padding: 2px;
+}
+
+.progress {
+  background-color: rgb(14, 16, 27);
 }
