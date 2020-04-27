@@ -8,7 +8,6 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 import 'bootstrap';
-import 'gritter';
 import "cocoon";
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -21,4 +20,3 @@ import "cocoon";
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
-//= require gritter

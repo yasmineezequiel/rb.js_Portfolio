@@ -2,8 +2,10 @@
 <html>
   <head>
     <title><%=@page_title%></title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
     <%= csrf_meta_tags %>
     <meta name="keywords" content= "<%= @seo_keywords %>" />
+    <%= favicon_link_tag  'favicons/favicon.ico'%>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -11,13 +13,12 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
-          <div id="background"><%= image_tag 'profile_img/scuba-vintage.jpg' %></div>
+          <div id="background"><%= image_tag 'profile_img/jelly.jpg' %></div>
           <%# from views/shared/_nav.html.erb %>
           <%= render "shared/application_nav" %>
           <%# from application_helper.rb %>
           <%= yield %>
           <%= render "shared/application_footer" %>
-          <%= render "shared/alerts"%>
           <%= source_helper("application") %> 
         </div>
       </div>

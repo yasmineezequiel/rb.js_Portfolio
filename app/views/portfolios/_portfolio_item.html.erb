@@ -1,9 +1,9 @@
 <div class="col-md-4">
     <%= image_tag portfolio_item.thumb_image.to_s, width: '100%' unless portfolio_item.thumb_image.nil? %>
     <div class="card mb-4 shadow-sm">
-        <%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %>
+        <%= link_to portfolio_item.title, portfolio_show_path(portfolio_item), class:'title' %>
         <div class="card-body"><%= portfolio_item.subtitle %>
-            <p class="card-text"><%= portfolio_item.body %></p>
+            <p class="card-text"><%= markdown portfolio_item.body %></p>
             <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><%= link_to 'Create New Item', new_portfolio_path if logged_in?(:site_admin) %>
                 </small>
