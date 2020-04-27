@@ -15,7 +15,7 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: rgb(216, 81, 81);
+  color: rgb(247, 231, 231);
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: rgb(14, 16, 27);
   border: .05rem solid rgb(4, 22, 54);
@@ -221,6 +221,7 @@ body {
   margin-top: 1%;
   -webkit-box-shadow: inset 25rem 25rem 25rem rgb(241, 204, 123);
           box-shadow: inset -2rem -20rem 5rem rgb(241, 204, 123);
+  text-align: left;
 }
 
 .profile-img {
@@ -233,10 +234,11 @@ body {
   0 100px 80px rgba(0, 0, 0, 0.12);
   padding: 5px;
   min-height: 100px;
-  width: 30vw;
+  width: 20vw;
   background: rgb(4, 43, 70);
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-left: -5px;
+  margin-bottom: 60px;
 }
 
 .contact-card {
@@ -256,4 +258,18 @@ i {
 .card-block {
   margin-top: 5px;
   margin-bottom: 5px;
+  color: rgb(245, 248, 250);
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: rgb(14, 16, 27);
+}
+.skills{
+  padding: 20px;
+  width: 20vw;
+  margin-top: -310px;
+  margin-left: 500px;
+}
+
+.skill {
+  text-align: left;
+  padding: 2px;
 }
