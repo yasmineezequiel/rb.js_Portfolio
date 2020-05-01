@@ -7,7 +7,7 @@
 a,
 a:focus,
 a:hover {
-  color: rgb(17, 17, 17);
+  color: rgb(251, 250, 250);
   font-weight: bold;
 }
 
@@ -15,10 +15,10 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: rgb(247, 231, 231);
+  color: rgb(248, 246, 245);
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: rgb(14, 16, 27);
-  border: .05rem solid rgb(4, 22, 54);
+  background-color: transparent;
+  border: 0.2rem solid rgb(197, 44, 31);
 }
 
 /*
@@ -172,7 +172,7 @@ h1{
 }
 
 .auth-links a {
-  color: black;
+  color: rgb(250, 250, 250);
 }
 
 .register-text {
@@ -213,8 +213,8 @@ h1{
 
 .lead {
   font-size: 1.6rem;
-  -webkit-box-shadow: inset 10rem 10rem 12rem rgb(241, 204, 123);
-          box-shadow: inset 2rem 5rem 8rem rgb(241, 204, 123);
+  background-color: black;
+  color: white;
 }
 
 .about-card {
@@ -223,23 +223,23 @@ h1{
   font-weight: bold;
   padding: 20px;
   margin-top: 1%;
-  -webkit-box-shadow: inset 25rem 25rem 25rem rgb(241, 204, 123);
-          box-shadow: inset -25rem -30rem 5rem rgb(241, 204, 123);
+  background-color: black;
+  color: white;
   text-align: left;
 }
 
 .profile-img {
   border:
-  0 2.8px 2.2px rgba(236, 162, 162, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12);
+  0 2.8px 2.2px rgba(30, 110, 238, 0.034),
+  0 6.7px 5.3px rgba(7, 116, 218, 0.048),
+  0 12.5px 10px rgba(3, 59, 112, 0.06),
+  0 22.3px 17.9px rgba(28, 46, 204, 0.072),
+  0 41.8px 33.4px rgba(69, 81, 238, 0.086),
+  0 100px 80px rgba(3, 13, 100, 0.12);
   padding: 5px;
   min-height: 100px;
   width: 20vw;
-  background: rgba(0, 0, 0, 0.12);
+  background: rgba(245, 247, 248, 0.12);
   border-radius: 5px;
   margin-left: -5px;
   margin-bottom: 60px;
@@ -248,8 +248,10 @@ h1{
 .contact-card {
   font-size: 1.4rem;
   font-family: 'Lato', sans-serif;
-  -webkit-box-shadow: inset 5rem 10rem 5rem rgb(241, 204, 123);
-          box-shadow: inset 5rem 10rem 5rem rgb(241, 204, 123);
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .cover-heading {
@@ -265,7 +267,7 @@ i {
 .card-block {
   margin-top: 5px;
   margin-bottom: 5px;
-  color: rgb(245, 248, 250);
+  color: white;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: rgb(14, 16, 27);
 }
@@ -283,5 +285,13 @@ i {
 }
 
 .progress {
-  background-color: rgb(14, 16, 27);
+  background-color: rgb(248, 244, 244);
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+.masthead-brand {
+  font-size: 1.8rem;  
 }
